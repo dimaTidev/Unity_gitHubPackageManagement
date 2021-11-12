@@ -1,0 +1,15 @@
+{
+    "name": "com.dimati.editor.packagemanagement.Editor",
+    "references": [
+        "com.dimatidev.toolpackagecreator.Editor",
+        "Unity.EditorCoroutines.Editor"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
