@@ -266,8 +266,8 @@ namespace PackageCreator
 
         bool
             isHighLighted_installedPackages,
-            isShow_installedPackages,
-            isShow_packagesInAssets;
+            isShow_installedPackages = true,
+            isShow_packagesInAssets = true;
 
         void DrawRepoButton(RepoData item)
         {
