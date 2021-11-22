@@ -36,7 +36,7 @@ namespace PackageCreator
 {
     public class GitHub_List : EditorWindow
     {
-        [MenuItem("Tools/GitHub_Packages")]
+        [MenuItem("Tools/Editor/GitHub_Packages")]
         static void Init() => ((GitHub_List)EditorWindow.GetWindow(typeof(GitHub_List))).Show();
 
         public Dictionary<string, RepoData> repos = new Dictionary<string, RepoData>();
