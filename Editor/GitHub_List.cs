@@ -121,7 +121,18 @@ namespace PackageCreator
             {
                 PackageJson package = PackageJson.Parce(File.ReadAllText(paths[i]));
                 packagesInAssets.Add(package.name, package);
-            }   
+            }
+
+            string folderPath = Application.dataPath;
+
+            //Search in package folder
+            folderPath = folderPath.Replace("/Assets", "/Packages");
+            paths = Directory.GetFiles(folderPath, "package.json", SearchOption.AllDirectories);
+            for (int i = 0; i < paths.Length; i++)
+            {
+                PackageJson package = PackageJson.Parce(File.ReadAllText(paths[i]));
+                packagesInAssets.Add(package.name, package);
+            }
         }
         //-------------------------------------------------------------------------------------------------------------------
         #endregion
